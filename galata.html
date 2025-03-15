@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galata Kulesi - İstanbul'un Gözü</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-content h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .content-section {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            margin: 40px 0;
+        }
+
+        .content-section h2 {
+            color: #e74c3c;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        .content-section p {
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .info-box {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .info-box h3 {
+            color: #e74c3c;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #e74c3c;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #c0392b;
+        }
+
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="hero-content">
+            <h1>Galata Kulesi</h1>
+            <p>İstanbul'un Gözü</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="content-section">
+            <h2>Tarihçe</h2>
+            <p>Galata Kulesi, 1348 yılında Cenevizliler tarafından inşa edilmiştir. Kule, İstanbul'un fethinden sonra Osmanlı döneminde gözlem evi, hapishane ve yangın gözetleme kulesi olarak kullanılmıştır. Günümüzde ise turistik bir mekan olarak hizmet vermektedir.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Mimari Özellikler</h2>
+            <p>Galata Kulesi, 67 metre yüksekliğinde, 9 metre çapında silindirik bir yapıdır. Kulenin en üst katında 360 derece İstanbul manzarası sunan bir gözlem terası bulunmaktadır. Yapının en dikkat çekici özelliği, şehrin her yerinden görülebilen karakteristik siluetidir.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Önemli Özellikler</h2>
+            <p>Kulenin en önemli özelliklerinden biri, İstanbul'un en yüksek yapılarından biri olmasıdır. Ayrıca, kulenin içinde asansör bulunması, ziyaretçilerin kolayca üst kata ulaşmasını sağlamaktadır. Kulenin üst katında restoran ve kafe hizmeti de verilmektedir.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Günümüzde Galata Kulesi</h2>
+            <p>Günümüzde Galata Kulesi, İstanbul'un en popüler turistik mekanlarından biridir. Kulenin gözlem terasından İstanbul Boğazı, Haliç ve şehrin diğer önemli noktaları görülebilmektedir. Özellikle gün batımında ve gece ışıklandırmasıyla büyüleyici bir görünüme kavuşur.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Galeri</h2>
+            <div class="gallery">
+                <img src="https://images.unsplash.com/photo-1591456983933-0c2b0c0c0c0d2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Galata Kulesi Dış Görünüm">
+                <img src="https://images.unsplash.com/photo-1591456983933-0c2b0c0c0c0d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Galata Kulesi İstanbul Manzarası">
+                <img src="https://images.unsplash.com/photo-1591456983933-0c2b0c0c0c0d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Galata Kulesi Gece Görünümü">
+                <img src="https://images.unsplash.com/photo-1591456983933-0c2b0c0c0c0d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Galata Kulesi Teras">
+                <img src="https://images.unsplash.com/photo-1591456983933-0c2b0c0c0c0d6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Galata Kulesi Restoran">
+                <img src="https://images.unsplash.com/photo-1591456983933-0c2b0c0c0c0d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Galata Kulesi Çevresi">
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Ziyaret Bilgileri</h2>
+            <div class="info-box">
+                <h3>Çalışma Saatleri</h3>
+                <p>Hafta içi: 09:00 - 20:00<br>Hafta sonu: 09:00 - 21:00</p>
+            </div>
+            <div class="info-box">
+                <h3>Ulaşım</h3>
+                <p>Galata Kulesi'ne Karaköy veya Şişhane'den yürüyerek ulaşılabilir. Ayrıca metro ve tramvay ile de ulaşım mümkündür.</p>
+            </div>
+        </section>
+
+        <a href="index.html" class="btn">Ana Sayfaya Dön</a>
+    </div>
+</body>
+</html> 

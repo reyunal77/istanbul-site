@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kız Kulesi - İstanbul'un Simgesi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/img/kizkulesi.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-content h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .content-section {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            margin: 40px 0;
+        }
+
+        .content-section h2 {
+            color: #e74c3c;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        .content-section p {
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .info-box {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .info-box h3 {
+            color: #e74c3c;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #e74c3c;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #c0392b;
+        }
+
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="hero-content">
+            <h1>Kız Kulesi</h1>
+            <p>Boğaz'ın İncisi</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="content-section">
+            <h2>Tarihçe</h2>
+            <p>Kız Kulesi'nin tarihi M.Ö. 24 yılına kadar uzanmaktadır. İlk olarak deniz feneri olarak inşa edilen yapı, zaman içinde farklı amaçlarla kullanılmıştır. Bizans döneminde savunma kulesi, Osmanlı döneminde ise karantina istasyonu olarak hizmet vermiştir.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Mimari Özellikler</h2>
+            <p>Kız Kulesi, 18 metre yüksekliğinde, 80 metre çapında bir ada üzerinde yer almaktadır. Kule, iki katlı olup alt katta restoran, üst katta ise gözlem terası bulunmaktadır. Yapının en dikkat çekici özelliği, deniz üzerinde yükselen zarif siluetidir.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Efsaneler</h2>
+            <p>Kız Kulesi, birçok efsaneye ev sahipliği yapmaktadır. En bilinen efsane, bir kızın yılan tarafından ısırılacağı kehaneti üzerine kuleye kapatılması ve yılanın üzüm sepeti içinde kuleye ulaşmasıdır. Bu efsane, kulenin "Kız Kulesi" olarak anılmasının nedenlerinden biridir.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Günümüzde Kız Kulesi</h2>
+            <p>Günümüzde Kız Kulesi, İstanbul'un en önemli turistik mekanlarından biridir. Restoranı ve muhteşem manzarasıyla ziyaretçilerin ilgi odağıdır. Özellikle gün batımında ve gece ışıklandırmasıyla büyüleyici bir görünüme kavuşur.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Galeri</h2>
+            <div class="gallery">
+                <img src="/img/kizkulesi.jpg" alt="Kız Kulesi Gündüz">
+                <img src="/img/kizkulesi.jpg" alt="Kız Kulesi Gece">
+                <img src="/img/kizkulesi.jpg" alt="Kız Kulesi İç Mekan">
+                <img src="/img/kizkulesi.jpg" alt="Kız Kulesi Gün Batımı">
+                <img src="/img/kizkulesi.jpg" alt="Kız Kulesi Restoran">
+                <img src="/img/kizkulesi.jpg" alt="Kız Kulesi Manzara">
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Ziyaret Bilgileri</h2>
+            <div class="info-box">
+                <h3>Çalışma Saatleri</h3>
+                <p>Hafta içi: 09:00 - 19:00<br>Hafta sonu: 09:00 - 20:00</p>
+            </div>
+            <div class="info-box">
+                <h3>Ulaşım</h3>
+                <p>Kız Kulesi'ne ulaşım için Üsküdar veya Kabataş'tan tekne turları düzenlenmektedir.</p>
+            </div>
+        </section>
+
+        <a href="index.html" class="btn">Ana Sayfaya Dön</a>
+    </div>
+</body>
+</html> 

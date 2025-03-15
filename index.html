@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İstanbul - Muhteşem Şehir</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-content h1 {
+            font-size: 4em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero-content p {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+
+        .kiz-kulesi {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            margin: 40px 0;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .kiz-kulesi img {
+            width: 50%;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .kiz-kulesi img:hover {
+            transform: scale(1.05);
+        }
+
+        .kiz-kulesi-content {
+            flex: 1;
+        }
+
+        .kiz-kulesi-content h2 {
+            color: #e74c3c;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+
+        .kiz-kulesi-content p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .attractions {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .attraction-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .attraction-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .attraction-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .attraction-card-content {
+            padding: 20px;
+        }
+
+        .attraction-card-content h3 {
+            color: #e74c3c;
+            margin-bottom: 10px;
+        }
+
+        .attraction-card-content p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .scroll-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #e74c3c;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .scroll-btn.visible {
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            .kiz-kulesi {
+                flex-direction: column;
+            }
+
+            .kiz-kulesi img {
+                width: 100%;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5em;
+            }
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #e74c3c;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #c0392b;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="hero-content">
+            <h1>İstanbul</h1>
+            <p>Doğu ile Batı'nın Buluştuğu Muhteşem Şehir</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="kiz-kulesi">
+            <img src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Kız Kulesi">
+            <div class="kiz-kulesi-content">
+                <h2>Kız Kulesi</h2>
+                <p>İstanbul'un simgesi olan Kız Kulesi, Boğaz'ın incisi olarak bilinir. Tarihi M.Ö. 24 yılına kadar uzanan bu eşsiz yapı, asırlar boyunca deniz feneri, karantina istasyonu ve gözlem evi olarak kullanılmıştır. Günümüzde ise muhteşem manzarası ve romantik atmosferiyle ziyaretçilerin ilgi odağıdır.</p>
+                <a href="kiz-kulesi.html" class="btn">Detaylı Bilgi</a>
+            </div>
+        </section>
+
+        <section class="attractions">
+            <div class="attraction-card">
+                <img src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Ayasofya">
+                <div class="attraction-card-content">
+                    <h3>Ayasofya</h3>
+                    <p>1500 yıllık tarihiyle dünyanın en önemli yapılarından biri olan Ayasofya, Bizans ve Osmanlı dönemlerinin izlerini taşıyan muhteşem bir mimari başyapıttır.</p>
+                    <a href="ayasofya.html" class="btn">Detaylı Bilgi</a>
+                </div>
+            </div>
+
+            <div class="attraction-card">
+                <img src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Sultanahmet Camii">
+                <div class="attraction-card-content">
+                    <h3>Sultanahmet Camii</h3>
+                    <p>Mavi çinileriyle ünlü Sultanahmet Camii, Osmanlı mimarisinin en güzel örneklerinden biridir. Altı minaresi ve muhteşem kubbesiyle göz kamaştırıcı bir yapıdır.</p>
+                    <a href="sultanahmet.html" class="btn">Detaylı Bilgi</a>
+                </div>
+            </div>
+
+            <div class="attraction-card">
+                <img src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Galata Kulesi">
+                <div class="attraction-card-content">
+                    <h3>Galata Kulesi</h3>
+                    <p>İstanbul'un en eski kulelerinden biri olan Galata Kulesi, şehrin muhteşem manzarasını sunan eşsiz bir gözlem noktasıdır.</p>
+                    <a href="galata.html" class="btn">Detaylı Bilgi</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="scroll-btn" id="scrollBtn">↑</div>
+
+    <script>
+        // Scroll to top button functionality
+        const scrollBtn = document.getElementById('scrollBtn');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollBtn.classList.add('visible');
+            } else {
+                scrollBtn.classList.remove('visible');
+            }
+        });
+
+        scrollBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Smooth scroll for all links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sultanahmet Camii - Mavi Cami</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-content h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .content-section {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            margin: 40px 0;
+        }
+
+        .content-section h2 {
+            color: #e74c3c;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        .content-section p {
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .info-box {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .info-box h3 {
+            color: #e74c3c;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #e74c3c;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #c0392b;
+        }
+
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="hero-content">
+            <h1>Sultanahmet Camii</h1>
+            <p>Mavi Cami</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="content-section">
+            <h2>Tarihçe</h2>
+            <p>Sultanahmet Camii, 1609-1616 yılları arasında Sultan I. Ahmed tarafından Mimar Sedefkâr Mehmed Ağa'ya yaptırılmıştır. Cami, Osmanlı mimarisinin en önemli örneklerinden biri olup, "Mavi Cami" olarak da bilinmektedir.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Mimari Özellikler</h2>
+            <p>Sultanahmet Camii, 43 metre yüksekliğinde, 23.5 metre çapında ana kubbeye sahiptir. Yapının en dikkat çekici özelliği, iç mekandaki 20.000'den fazla İznik çinisi ve 260 pencere ile aydınlatılan ferah iç mekanıdır. Altı minaresi olan cami, Osmanlı mimarisinin en büyük yapılarından biridir.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Önemli Özellikler</h2>
+            <p>Caminin en önemli özelliklerinden biri, iç mekandaki mavi çinilerin kullanımıdır. Bu çiniler, caminin "Mavi Cami" olarak anılmasına neden olmuştur. Ayrıca, yapının dış avlusu ve iç avlusu olmak üzere iki avlusu bulunmaktadır. Caminin külliyesi içinde medrese, hastane, hamam, çarşı ve türbe gibi yapılar da yer almaktadır.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Günümüzde Sultanahmet Camii</h2>
+            <p>Günümüzde Sultanahmet Camii, hem ibadet yeri hem de turistik bir mekan olarak hizmet vermektedir. Caminin iç mekanındaki çiniler ve kalem işi süslemeler, ziyaretçilerin ilgi odağıdır. Özellikle gün ışığının pencerelerden süzülerek iç mekana yansıması, büyüleyici bir görünüm oluşturmaktadır.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Galeri</h2>
+            <div class="gallery">
+                <img src="https://images.unsplash.com/photo-1591456983933-0c2b0c0c0c0cc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Sultanahmet Camii Dış Görünüm">
+                <img src="https://images.unsplash.com/photo-1591456983933-0c2b0c0c0c0cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Sultanahmet Camii İç Mekan">
+                <img src="https://images.unsplash.com/photo-1591456983933-0c2b0c0c0c0ce?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Sultanahmet Camii Çiniler">
+                <img src="https://images.unsplash.com/photo-1591456983933-0c2b0c0c0c0cf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Sultanahmet Camii Kubbe">
+                <img src="https://images.unsplash.com/photo-1591456983933-0c2b0c0c0c0d0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Sultanahmet Camii Mihrap">
+                <img src="https://images.unsplash.com/photo-1591456983933-0c2b0c0c0c0d1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Sultanahmet Camii Minareler">
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Ziyaret Bilgileri</h2>
+            <div class="info-box">
+                <h3>Çalışma Saatleri</h3>
+                <p>Hafta içi: 09:00 - 17:00<br>Hafta sonu: 09:00 - 18:00</p>
+            </div>
+            <div class="info-box">
+                <h3>Ulaşım</h3>
+                <p>Sultanahmet Camii'ne Sultanahmet Meydanı'ndan yürüyerek ulaşılabilir. Ayrıca tramvay ile de ulaşım mümkündür.</p>
+            </div>
+        </section>
+
+        <a href="index.html" class="btn">Ana Sayfaya Dön</a>
+    </div>
+</body>
+</html> 
